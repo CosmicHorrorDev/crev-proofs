@@ -90,3 +90,32 @@ comment: |-
 Au4qAUSMAJkGis8PLhAA474IgsBWdwhGc348VLMo3j8mfacIja6kx4rfmWuDKeDA3MCQdo0KDi-JttgzVVBwBQ
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2022-06-11T16:48:18.567944967-05:00"
+from:
+  id-type: crev
+  id: PTlVqKJclK7ELjugGnh_nDgpaWLAAGRIg5UH391WKnQ
+  url: "https://github.com/LovecraftianHorror/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: thiserror
+  version: 1.0.31
+  revision: cbe821249595aa5e389d5cb96e84da80adca8531
+  digest: WixLbTvGs6tEGO3qn6XQIgRV5RO_HVTM05aXmBQPWTQ
+review:
+  thoroughness: high
+  understanding: medium
+  rating: positive
+alternatives:
+  - source: "https://crates.io"
+    name: snafu
+comment: |-
+  The bulk of the logic is in `thiserror_impl`. This crate just contains a
+  handful of private traits to extend functionality of `Path`, `PathBuf`, and
+  some generic types
+----- SIGN CREV PROOF -----
+z1IMjo_SdyfgVlKCk-Dva_-6Ilcf38c8PYHdDsFtzZZGEWO5WxCQZCRFCHNPgb4JfRL5mC8jr6QdACXxWBdJCg
+----- END CREV PROOF -----
+
