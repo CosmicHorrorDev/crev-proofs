@@ -54,3 +54,23 @@ comment: |-
 hX0QDJjhE6-pIzMkL7LnCuptZnoaQPHvF8kYaHY-G6orhl0oLCMkQ4jsyLPcedoj-WWwYbBV79xHel34LGltCA
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: trust
+version: -1
+date: "2022-06-11T00:17:38.278636278-05:00"
+from:
+  id-type: crev
+  id: PTlVqKJclK7ELjugGnh_nDgpaWLAAGRIg5UH391WKnQ
+  url: "https://github.com/LovecraftianHorror/crev-proofs"
+ids:
+  - id-type: crev
+    id: aD4K0g6AcSKUDp3VPF7u4hM94zEkqjWeRQwmabLBcV0
+    url: "https://github.com/Mark-Simulacrum/crev-proofs"
+trust: high
+comment: |-
+  Mark-Simulacrum is an established part of Rust including being involved in
+  multiple teams
+----- SIGN CREV PROOF -----
+4HbTUnAEPxEN0F_fakJ2PIDQJSUOlHMyQAKTb_ns9T89VJSxGYf3DdJlWNgfTrY_0aISwxevAWNR-ktsYq3ZDg
+----- END CREV PROOF -----
+
