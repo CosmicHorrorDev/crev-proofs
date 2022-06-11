@@ -15,3 +15,20 @@ trust: medium
 7iqCpkZiIkuZ7aeuKY23bdBNDFhDxgHAcCi8SiLbLeWWvLOek1uXXxIS0_ytV28I8AFWGLHMq0d78KA49zb_BA
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: trust
+version: -1
+date: "2022-06-10T23:43:32.136368608-05:00"
+from:
+  id-type: crev
+  id: PTlVqKJclK7ELjugGnh_nDgpaWLAAGRIg5UH391WKnQ
+  url: "https://github.com/LovecraftianHorror/crev-proofs"
+ids:
+  - id-type: crev
+    id: e13vqC78LDCc-IiVPs-XkOHWd1j6PJUcYrugasS77hQ
+    url: "https://github.com/cad97/crev-proofs"
+trust: high
+----- SIGN CREV PROOF -----
+h4fa9f9YEftEOmKp9xp-DgTZ8YyR5PvT9yxfv7aunaG2ttGUWWWy3p3z5obQAEFW5yFigbdq-K4dk7r0E0WfDA
+----- END CREV PROOF -----
+
