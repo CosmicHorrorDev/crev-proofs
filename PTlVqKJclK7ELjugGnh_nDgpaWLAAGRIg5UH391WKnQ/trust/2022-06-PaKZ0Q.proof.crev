@@ -74,3 +74,24 @@ comment: |-
 4HbTUnAEPxEN0F_fakJ2PIDQJSUOlHMyQAKTb_ns9T89VJSxGYf3DdJlWNgfTrY_0aISwxevAWNR-ktsYq3ZDg
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: trust
+version: -1
+date: "2022-06-11T00:18:51.274891744-05:00"
+from:
+  id-type: crev
+  id: PTlVqKJclK7ELjugGnh_nDgpaWLAAGRIg5UH391WKnQ
+  url: "https://github.com/LovecraftianHorror/crev-proofs"
+ids:
+  - id-type: crev
+    id: Cb9lZWK4YhYNt5eFtWWwvm3p1S5HamjXqgWBebGdhm4
+    url: "https://github.com/matklad/crev-proofs"
+trust: high
+comment: |-
+  matklad is an established person in the Rust community. They've contributed to
+  the compiler several times in the past and have done _a lot_ of work on
+  `rust-analyzer`
+----- SIGN CREV PROOF -----
+Wato1iy8eJ6IWiNWhSuNGJs8LFz-2ms4s3YyDNnCzxtqlh-e1EccL7LZJ37fCQzBaEgJJ2LOYl-5iiyGlh7bBQ
+----- END CREV PROOF -----
+
