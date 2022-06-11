@@ -65,3 +65,28 @@ comment: |-
 exWM6ubWLYnd8AjwbjhSO0gUqrnBjmn0ZRR7L7-TwZlGYyoTyE-fJPsq-xIn7QdJ06QqfiCXO47Rmf6_pmtLCA
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2022-06-11T16:14:17.520804497-05:00"
+from:
+  id-type: crev
+  id: PTlVqKJclK7ELjugGnh_nDgpaWLAAGRIg5UH391WKnQ
+  url: "https://github.com/LovecraftianHorror/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: pest_derive
+  version: 2.1.0
+  revision: f781c62e1aa15784c2c25a7a33dae44d7caf0f6b
+  digest: ayE_BEHrafiHbUzLmwigSjqFD0bXaNt2kdcRibVpAJE
+review:
+  thoroughness: high
+  understanding: medium
+  rating: strong
+comment: |-
+  Essentially no logic. It just 8 lines that set up the derive macro to forward
+  to `pest_generator`
+----- SIGN CREV PROOF -----
+Au4qAUSMAJkGis8PLhAA474IgsBWdwhGc348VLMo3j8mfacIja6kx4rfmWuDKeDA3MCQdo0KDi-JttgzVVBwBQ
+----- END CREV PROOF -----
+
