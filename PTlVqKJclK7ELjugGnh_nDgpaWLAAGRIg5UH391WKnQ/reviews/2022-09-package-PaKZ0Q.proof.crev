@@ -1,0 +1,26 @@
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: 2022-09-29T16:06:24.510261364-06:00
+from:
+  id-type: crev
+  id: PTlVqKJclK7ELjugGnh_nDgpaWLAAGRIg5UH391WKnQ
+  url: https://github.com/LovecraftianHorror/crev-proofs
+package:
+  source: https://crates.io
+  name: pest_derive
+  version: 2.3.1
+  digest: FKlefTfd43trRU4yZyCtzQ4fuLrroDep8ANcFgIMJXw
+review:
+  thoroughness: high
+  understanding: high
+  rating: positive
+alternatives:
+- source: https://crates.io
+  name: nom
+comment: |-
+  This crate is just a tiny macro shim over `pest_generator`
+----- SIGN CREV PROOF -----
+t-sW8qfMhyddJRKOvT41FObdXZOgABahmXGwQtoggSxBJUNXi-BsREHpq7Q3ZcEz21nJpAt_CVbEJmYVGVIMCg
+----- END CREV PROOF -----
+
