@@ -37,3 +37,59 @@ comment: |-
 -TWMnOscLWTN2N3z6exAIjD0VaHDoRryNnu1fzvDgfUQSmsqU_WNeUn68iyCmk4R9Rc2RpxrHIZfcsFloT_ACg
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: 2023-02-13T14:43:45.867178551-07:00
+from:
+  id-type: crev
+  id: PTlVqKJclK7ELjugGnh_nDgpaWLAAGRIg5UH391WKnQ
+  url: https://github.com/LovecraftianHorror/crev-proofs
+package:
+  source: https://crates.io
+  name: lexopt
+  version: 0.3.0
+  revision: f75918d2f0cf6311b6e386fdd7549a8a07124d6a
+  digest: Wy8WrVZxcttueJhErFz62NMt9PDp-bioaHocnEbT11M
+review:
+  thoroughness: low
+  understanding: medium
+  rating: positive
+comment: |-
+  ## Fundamental
+  
+  * [x] Well maintained?
+  * [x] Well documented?
+    * Very thorough comments within the source and incldues a very solid
+      DESIGN.md
+  * [x] Sane dep tree?
+    * No deps :)
+  * [x] Good test coverage?
+    * `cargo llvm-cov` reports 91.96% line coverage on Linux (there is a lot of
+      conditional compilation to handle WTF-8 hell on Windows)
+  * [x] Tests are passing?
+  
+  ## Nice to have
+  
+  * [x] `cargo check` is happy?
+  * [x] `rustfmt` is happy?
+  * [x] `clippy` is happy?
+    * Happy on 1.67.1 at least
+  
+  ## `unsafe` Review
+  
+  No direct `unsafe` usage and has `#[forbid(unsafe_code)]`, so nothing to cover
+  here :)
+  
+  * [ ] Directly uses `unsafe`?
+  * [ ] Passes `miri` if using `unsafe`?
+  
+  ## General Review
+  
+  Nothing really significant to note here. The whole design seems very well
+  thought out and the crate is pedantic about correctness (at the cost of
+  slightly worse ergonomics which is a trade I will gladly take).
+----- SIGN CREV PROOF -----
+gFc1VUMZOPOMSX5O7R5nKR9j9NWuInUcx4SrRa3b-rVTFaqGdnDzJtrkqp01uSmcOf-4AaFBCMDDG7T33VoWCQ
+----- END CREV PROOF -----
+
