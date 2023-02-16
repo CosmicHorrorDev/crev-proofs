@@ -95,3 +95,86 @@ comment: |-
 kRoEIcWBPGcxz9qVqiraXCt3Ht_lXmTQwwZaQTldOHz7HBV_hb15Q0XzMInUGGTELvGL1saGCTBgXnxKHg-bBA
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: 2023-02-15T22:37:36.643966103-07:00
+from:
+  id-type: crev
+  id: PTlVqKJclK7ELjugGnh_nDgpaWLAAGRIg5UH391WKnQ
+  url: https://github.com/LovecraftianHorror/crev-proofs
+package:
+  source: https://crates.io
+  name: slab
+  version: 0.4.7
+  revision: 817a2ec227e819f308e8e4d0487084940b4ef831
+  digest: CX1LHiDn_y7XctrPQOLRkABxehiooi_biXcdHh7Qjq4
+review:
+  thoroughness: medium
+  understanding: medium
+  rating: positive
+comment: |-
+  ## Fundamental
+  
+  * [x] Well maintained?
+    * Maintained by the Tokio project
+  * [x] Well documented?
+  * [x] Sane dep tree?
+    * Build dependency on `autocfg` and optional dependency on `serde` :)
+  * [x] Good test coverage?
+    * Good when including the unstable `--doctests` option
+    * 90.7% line coverage with `cargo +nightly llvm-cov --doctests`
+  * [x] Tests are passing?
+  * [x] `cargo audit` is happy?
+  
+  ## Nice to have
+  
+  * [x] `cargo check` is happy?
+  * [x] `rustfmt` is happy?
+  * [x] `clippy` is happy?
+    * Happy on 1.66.1 at least
+  * [x] No outdated deps?
+  
+  ## Build scripts
+  
+  * [x] Build script(s) seem sane?
+    * Only used to gate off `cfg`s for different rust versions
+  
+  ## `unsafe` Review
+  
+  * [x] Directly uses `unsafe`?
+  * [x] Passes `miri` if using `unsafe`?
+    * Tested with `miri` in CI
+  
+  Only uses `unsafe` to expose three unsafe methods on `Slab`
+  
+  `Slab::get_unchecked()` is just an analog to `[T]::get_unchecked()` and
+  internally calls `[T]::get_unchecked()` on the underlying vector. The caller
+  MUST call this method on an occupied entry within the bounds of the underlying
+  vector. Calling it outside of bounds is undefined behavior while calling it on
+  a `Vacant` entry will panic (hits `unreachable!()`) although this may be
+  relaxed to `unreachable_unchecked()` in the future a la
+  https://github.com/tokio-rs/slab/issues/40
+  
+  `Slab::get_unchecked_mut()` is the same situation as `Slab::get_unchecked()`.
+  Also an analog of the slice method and also the same UB and panic behavior
+  
+  `Slab::get2_unchecked_mut()` provides a way to get a mutable reference to two
+  elements in the `Slab` without bounds checking. This has the same invariants
+  as the other two (UB if out of range and panics on `Vacant` entries) along
+  with the additional invariant that the two elements have to be different to
+  prevent multiple mutable references to the same element. The last invariant is
+  enforced with a debug assert. Because there is no analog for slices this
+  manually implements the addressing in a similar way to
+  `[T]::get_unchecked_mut()` although it would be nice to have a debug assert
+  that the indices are in range (the standard library uses
+  `assert_unsafe_precondition!() to do this on `[T]::get_unchecked()` and
+  `[T]::get_unchecked_mut()` which gets picked up by `cargo-careful`)
+  
+  ## General Review
+  
+  <!-- General audit -->
+----- SIGN CREV PROOF -----
+bum4QJC0MCeFNSseXUY3XezjNvRqv-BPjeLg3qDvTZRKSuN5BG6gGe1-fnTF1t0GWj6inpq9FdQtmPCwmRYWCw
+----- END CREV PROOF -----
+
