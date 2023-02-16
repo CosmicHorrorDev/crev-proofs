@@ -30,13 +30,26 @@ any time I do a review.
 * [ ] `cargo check` is happy?
 * [ ] `rustfmt` is happy?
 * [ ] `clippy` is happy?
+* [ ] No outdated deps?
+
+## Build scripts
+
+<!-- BUILD -->
+_Doesn't directly use build scripts!_
+<!-- OR -->
+* [ ] Build script(s) seem sane?
+<!-- END BUILD -->
 
 ## `unsafe` Review
 
+<!-- UNSAFE -->
+_Doesn't directly use `unsafe`!_
+<!-- OR -->
 * [ ] Directly uses `unsafe`?
 * [ ] Passes `miri` if using `unsafe`?
 
 <!-- Audit for UB/soundness -->
+<!-- END UNSAFE -->
 
 ## General Review
 
